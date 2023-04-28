@@ -1,0 +1,639 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "ONE PIECE";
+    src: url("font/OnePiece-zAqL.ttf") format("truetype");
+}
+
+header,
+section h1,
+section h2,
+button {
+    font-family: 'ONE PIECE', cursive;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+h2 {
+    border-bottom: solid red;
+    height: 2em;
+}
+
+header .logo-piece {
+    width: 36%;
+    text-align: center;
+}
+
+section h3,
+body,
+input,
+textarea {
+    font-family: 'Comic Neue', cursive;
+    font-size: 18px;
+}
+
+header {
+    padding: 16px 0;
+    background-color: gold;
+    color: red;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+}
+
+
+header .container {
+    display: contents;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#product {
+    padding: 60px 0;
+    position: relative;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.product-item {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px #c5c5c5;
+    margin-bottom: 30px;
+    padding: 30px;
+    text-align: center;
+    width: calc(25% - 15px);
+    position: relative;
+}
+
+.product-item img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.product-item h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.product-item p {
+    font-family: "Comic Neue", sans-serif;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.product-item .price {
+    font-family: 'Comic Neue', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+    margin-bottom: 10px;
+}
+
+.product-item button {
+    font-family: 'Comic Neue', cursive;
+    background-color: #001aff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-item button:hover {
+    background-color: red;
+}
+
+.product-list h2 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.brands-list img {
+    height: 24px;
+}
+
+.brands-list li {
+    display: inline;
+    margin-right: 8px;
+}
+
+section .container {
+    align-items: flex-start;
+}
+
+
+section {
+    padding: 48px 0;
+    color: #001aff;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section p {
+    margin-bottom: 24px;
+}
+
+.social-links img {
+    height: 24px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+.store-front {
+    width: 400px;
+    margin-right: 32px;
+}
+
+#contact .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 20px);
+}
+
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: calc(145% - 10px);
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+form button {
+    background-color: rgb(255, 0, 0);
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ff0000;
+}
+
+input:focus,
+textarea:focus {
+    outline: #ffffff;
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+
+form button {
+    background-color: rgb(4, 0, 255);
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: rgb(255, 0, 0);
+    ;
+}
+
+input:focus,
+textarea:focus {
+    outline-color: rgba(255, 0, 0, 0.836);
+}
+
+footer {
+    background-color: rgba(255, 0, 0, 0.692);
+    color: #ffffff;
+    padding: 16px 0;
+}
+
+/* Layout para tablets */
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    header div.container {
+        flex-direction: column;
+        max-width: 90%;
+        font-size: 36px;
+    }
+
+    header {
+        max-width: 100%;
+    }
+    
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .logo-piece {
+        width: 80%;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 57px;
+    }
+
+    .sobre {
+        display: block;
+    }
+
+    header nav.container {
+        flex-direction: column;
+    }
+
+    nav {
+        order: 0;
+        margin: 20px 0 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    section .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    /* Ajuste o tamanho das imagens */
+    .store-front {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .brands-list {
+        margin-right: 0;
+    }
+
+    .social-links {
+        margin-right: 0;
+    }
+
+    /* Ajuste o layout dos produtos */
+    .product-item {
+        display: block;
+    }
+
+    .product-item .product-item {
+        margin-bottom: 32px;
+    }
+
+    .conteudo a {
+        display: block;
+        font-size: 1.5em;
+    }
+
+    .product-item {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .contact-methods {
+        display: grid;
+        row-gap: 5%;
+        justify-content: space-between;
+        width: calc(100% - 20px);
+    }
+    
+    form input,
+    form textarea,
+    form button {
+        display: block;
+        width: calc(145% - 10px);
+        margin-bottom: 8px;
+        margin-left: 1px;
+        padding: 8px;
+    }
+    
+    form textarea {
+        resize: none;
+        height: 180px;
+    }
+    
+    form button {
+        background-color: rgb(255, 0, 0);
+        color: #ecf0f1;
+        border: none;
+        cursor: pointer;
+    }
+    
+    form button:hover {
+        background-color: #ff0000;
+    }
+    
+    input:focus,
+    textarea:focus {
+        outline: #ffffff;
+    }
+    
+    section h3 {
+        margin-bottom: 16px;
+    }
+    
+    form button {
+        background-color: rgb(4, 0, 255);
+        color: #ecf0f1;
+        border: none;
+        cursor: pointer;
+    }
+
+    form button:hover {
+        background-color: #ff0000;
+    }
+    
+    input:focus,
+    textarea:focus {
+        outline: #ffffff;
+    }
+    
+    section h3 {
+        margin-bottom: 16px;
+    }
+    
+    form button {
+        background-color: rgb(4, 0, 255);
+        color: #ecf0f1;
+        border: none;
+        cursor: pointer;
+    }
+    
+    form button:hover {
+        background-color: rgb(255, 0, 0);
+        ;
+    }
+    
+    input:focus,
+    textarea:focus {
+        outline-color: rgba(255, 0, 0, 0.836);
+    }
+    .botao-menu {
+        display: none;
+    }
+
+    .menu a {
+        display: inline;
+    }
+}
+
+/* Layout mobile */
+@media screen and (max-width: 640px) {
+    .container {
+        max-width: 90%;
+    }
+
+    header div.container {
+        flex-direction: column;
+        max-width: 90%;
+        font-size: 36px;
+    }
+
+    header {
+        max-width: 100%;
+    }
+    
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .logo-piece {
+        width: 74%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    header nav.container {
+        flex-direction: column;
+    }
+
+    nav {
+        order: 0;
+        margin: 20px 0 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    section .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    /* Ajuste o tamanho das imagens */
+    .store-front {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .brands-list {
+        margin-right: 0;
+    }
+
+    .social-links {
+        margin-right: 0;
+    }
+
+    /* Ajuste o layout dos produtos */
+    .product-item {
+        display: block;
+    }
+
+    .product-item .product-item {
+        margin-bottom: 32px;
+    }
+
+    .conteudo a {
+        display: block;
+        font-size: 1.5em;
+    }
+
+    .product-item {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .contact-methods {
+        display: grid;
+        row-gap: 5%;
+        justify-content: space-between;
+        width: calc(100% - 20px);
+    }
+    
+    form input,
+    form textarea,
+    form button {
+        display: block;
+        width: calc(108% - 10px);
+        margin-bottom: 8px;
+        padding: 8px;
+    }
+    
+    form textarea {
+        resize: none;
+        height: 180px;
+    }
+    
+    form button {
+        background-color: rgb(255, 0, 0);
+        color: #ecf0f1;
+        border: none;
+        cursor: pointer;
+    }
+    
+    form button:hover {
+        background-color: #ff0000;
+    }
+    
+    input:focus,
+    textarea:focus {
+        outline: #ffffff;
+    }
+    
+    section h3 {
+        margin-bottom: 16px;
+    }
+    
+    form button {
+        background-color: rgb(4, 0, 255);
+        color: #ecf0f1;
+        border: none;
+        cursor: pointer;
+    }
+    
+    form button:hover {
+        background-color: rgb(255, 0, 0);
+    }
+    
+    input:focus,
+    textarea:focus {
+        outline-color: rgba(255, 0, 0, 0.836);
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu > li {
+        clear: both;
+    }
+
+    .botao-menu {
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+    }
+
+    .botao-menu button {
+        padding: 8px;
+        background-color: rgb(255, 0, 0);
+        color: #fff;
+    }
+
+    .botao-menu button:hover {
+        background-color:rgb(4, 0, 255);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .botao-menu {
+        display: none;
+    }
+
+    .menu a {
+        display: inline;
+    }
+}
